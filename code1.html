@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" id="a"><br><br>
+  <input type="text" id="b"><br><br>
+  <button type="button" onclick="getResult()">View</button>
+  <p>Result: <span id="result"></span></p>
+  <script>
+  function getResult() {
+    var a = document.getElementById('a').value;
+    var b = document.getElementById('b').value;
+    var c = Number(a) + Number(b);
+    document.getElementById('result').textContent = c;
+  }
+  </script>
+</body>
+</html>
