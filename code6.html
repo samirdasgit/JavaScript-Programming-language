@@ -1,15 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
 <body>
+  <script>
+    alert("Hello World! - Alert");
+    confirm("Hello World! - Confirm") ? console.log("Confirmed") : console.log("Cancelled");
 
-<h1>My First Web Page</h1>
-<p>My First Paragraph</p>
+    if(confirm("Hello World! - Confirm"))
+    {
+      console.log("Confirmed");
+    }
+    else{
+      console.log("Cancelled");
+    }    
 
-<p id="demo"></p>
-
-<script>
-document.getElementById("demo").innerHTML = "<h2>Hello World</h2>";
-</script>
-
+    document.write("Hello World! - Document Write");
+    console.log("Hello World! - Console Log");
+  </script>
 </body>
 </html>
